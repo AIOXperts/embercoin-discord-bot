@@ -1,0 +1,34 @@
+{
+  "general":{
+	"prefix": "$$",
+	"token": "NDA5NDI0Nzc5OTAxMTQxMDAz.DVeaQQ.Hj0rYZKztOvo3L_AoHBtkpg6YkU",
+	"currencies": [
+		"BTC", "ETH", "XRP", "LTC", "DASH", "ETC", "XMR", "MAID", "STRAT"
+	],
+	"logo": "",
+	"translatedInto": [
+		"EUR", "USD"
+	],
+	"admins": [
+		"342083929010077696"
+	]
+  },
+  "mysql": {
+    "host": "localhost",
+    "user": "root",
+	"password": "",
+	"database": "emberbot"
+  },
+  "emberWallet": {
+    "host": "localhost",
+    "user": "user",
+	"pass": "SecureP@$$word123",
+	"port": 27127
+  },  
+  "greetings": {
+    "active": "default",
+    "greetings": {
+      "default": "Welcome to Ember's Community Discord!"
+    }
+  }
+}

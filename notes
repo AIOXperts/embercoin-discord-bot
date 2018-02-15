@@ -1,0 +1,17 @@
+altcoin
+    .set('host', wallet.getOptions("EMB").address)
+    .set({port: wallet.getOptions("EMB").port});
+
+altcoin.auth(wallet.getOptions("EMB").username, wallet.getOptions("EMB").password)
+altcoin.exec('getaccount ' + result[0].address, function(err, balance) {
+    console.log(balance);
+    var embed = new Discord.RichEmbed()
+        .setThumbnail(ember.config.general.logo)
+        .setColor('0x7289DA')
+        .setDescription(":money_with_wings: __***MyBalance***__\n")
+        .addField(":chart_with_upwards_trend: __EmberCoin (POS):__", balance, false)
+
+    msg.channel.send('', {
+        embed
+    })
+})
